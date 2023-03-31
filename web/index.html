@@ -1,0 +1,29 @@
+<html>
+<head>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="./js/gantt.js"></script>
+</head>
+<style>
+    button{
+        margin: 5px;
+        cursor: pointer;
+    }
+    h1{
+        margin-bottom: 10px;
+    }
+    input[type='checkbox']{
+        margin-left: 10px;
+    }
+</style>
+<body>
+    <h1>Gantt Process Control</h1>
+    <button onclick="refresh()">Atualizar</button>
+    <label for="">Filtrar Data</label>
+    <input type="date" id="date">
+    <br>
+    <div id="resources"></div>
+    <br>
+    <div id="chart_div"></div>
+</body>
+</html>
